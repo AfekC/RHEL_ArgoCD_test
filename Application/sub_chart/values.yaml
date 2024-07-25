@@ -1,7 +1,7 @@
 github:
   user: AfekC
   token: empty-pass
-  url: <https://api.github.com/repos/afekc/rhel-demo/issues>
+  url: https://api.github.com/repos/afekc/rhel-demo/issues
 
 deploy1: 
   ReplicaNumber: 1
