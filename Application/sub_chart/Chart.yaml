@@ -5,7 +5,7 @@ type: application
 dependencies:
   - name: rhel-demo
     repository: oci://ghcr.io/afekc/helm
-    version: "1.0.5"
+    version: "1.0.6"
     alias: deploy1
   - name: rhel-demo
     repository: oci://ghcr.io/afekc/helm
