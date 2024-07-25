@@ -23,5 +23,5 @@ spec:
                 fieldRef:
                   fieldPath: status.loadBalancer.ingress[0].hostname
           - name: PORT
-            value: {{ .Values.deploy.service.servicePort }}
+            value: "{{ .Values.deploy.service.servicePort }}""
   backoffLimit: 1
