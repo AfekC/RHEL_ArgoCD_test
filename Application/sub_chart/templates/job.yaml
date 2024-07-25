@@ -19,7 +19,7 @@ spec:
         args: ["curl ${SERVICE}:${PORT}/health/liveliness || exit 1"]
         env:
           - name: SERVICE
-            value: "{{ status.loadBalancer.ingress[0].hostname }}"
+            value: "http://deploy1-route-user5-application.apps.cluster-gzmx6.gzmx6.sandbox1578.opentlc.com/"
           - name: PORT
             value: "{{ .Values.deploy.service.servicePort }}"
   backoffLimit: 1
