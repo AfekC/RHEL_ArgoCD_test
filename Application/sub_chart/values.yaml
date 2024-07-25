@@ -21,3 +21,7 @@ deploy2:
   argocd:
     syncwave:
       deployment: 10
+
+deploy: 
+  service:
+    servicePort: 8080
