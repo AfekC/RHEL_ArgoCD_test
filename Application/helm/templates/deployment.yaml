@@ -11,6 +11,10 @@ spec:
     metadata:
       labels:
         app: {{ .Chart.Name }}
+      Annotations:
+        argocd.argoproj.io/refresh: 'true'
+        argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
     spec:
       volumes:
         - name: index-html
