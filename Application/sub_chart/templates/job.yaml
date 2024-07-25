@@ -19,9 +19,7 @@ spec:
         args: ["curl ${SERVICE}:${PORT}/health/liveliness || exit 1"]
         env:
           - name: SERVICE
-            valueFrom:
-                fieldRef:
-                  fieldPath: status.loadBalancer.ingress[0].hostname
+            value: "{{ status.loadBalancer.ingress[0].hostname }}"
           - name: PORT
             value: "{{ .Values.deploy.service.servicePort }}"
   backoffLimit: 1
