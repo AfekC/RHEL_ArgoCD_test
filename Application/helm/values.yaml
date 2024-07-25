@@ -17,7 +17,7 @@ probes:
     successThreshold: 1 # count to decalre seccessfull 
     failureThreshold: 3 # count to decalre failur
   liveness:
-    path: /health/liveliness
+    path: /health/livelinesszzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
     initialDelaySeconds: 1
     timeoutSeconds: 1
     periodSeconds: 10
