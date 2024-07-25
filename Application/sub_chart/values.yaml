@@ -1,7 +1,7 @@
 github:
   user: AfekC
   token: empty-pass
-  url: https://api.github.com/repos/afekc/rhel-demo/issues
+  url: https://api.github.com/repos/AfekC/RHEL_ArgoCD_test/issues
 
 deploy1: 
   ReplicaNumber: 1
