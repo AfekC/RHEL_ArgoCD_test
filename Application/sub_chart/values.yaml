@@ -26,4 +26,4 @@ deploy:
   service:
     servicePort: 8080
 
-test: Healthy
+test: Null
