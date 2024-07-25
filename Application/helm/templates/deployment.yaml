@@ -12,6 +12,7 @@ spec:
       labels:
         app: {{ .Chart.Name }}
       Annotations:
+        argocd.argoproj.io/sync-wave: '{{ .Values.argocd.syncwave.deployment }}'
         argocd.argoproj.io/refresh: 'true'
         argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
         checksum/config: {{ include (print $.Template.BasePath "/ConfigMap.yaml") . | sha256sum }}
