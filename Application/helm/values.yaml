@@ -10,14 +10,20 @@ service:
 
 probes:
   readiness:
-    path: /health/readiness
+    httpGet:
+      path: /health/readyness
+      port: 8080
+      scheme: HTTP    
     initialDelaySeconds: 1
     timeoutSeconds: 1 # the time for timeout
     periodSeconds: 10 # the abount of time to wait between checks
     successThreshold: 1 # count to decalre seccessfull 
     failureThreshold: 3 # count to decalre failur
   liveness:
-    path: /health/liveliness
+    httpGet:
+      path: /health/liveness
+      port: 8080
+      scheme: HTTP
     initialDelaySeconds: 1
     timeoutSeconds: 1
     periodSeconds: 10
