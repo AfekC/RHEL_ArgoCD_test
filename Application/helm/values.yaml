@@ -11,7 +11,7 @@ service:
 probes:
   readiness:
     httpGet:
-      path: /health/readyness
+      path: /health/readiness
       port: 8080
       scheme: HTTP    
     initialDelaySeconds: 1
@@ -21,7 +21,7 @@ probes:
     failureThreshold: 3 # count to decalre failur
   liveness:
     httpGet:
-      path: /health/liveness
+      path: /health/liveliness
       port: 8080
       scheme: HTTP
     initialDelaySeconds: 1
